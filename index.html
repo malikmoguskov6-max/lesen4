@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1 задача
+
+      let price = 10000;
+      let range = "day";
+      if (range == "day") {
+        rangeRU = "день";
+      } else if (range == "week") {
+        rangeRU = "неделя";
+      } else if (range == "month") {
+        rangeRU = "месяц";
+      }
+      console.log(`${price} p в ${rangeRU}`);
+      
+
+      // 2 задача
+
+      let temp = 25;
+      let weather = "clear";
+      let activity = "";
+
+      if (temp >= 25 && weather == "clear") {
+        activity = "golf";
+      } else if ((temp >= 10 && temp <= 24) || weather == "cloudy") {
+        activity = "bowling";
+      } else {
+        activity = "hiking";
+      }
+
+      console.log(`"${activity}"`);
+      
+    </script>
+  </body>
+</html>
